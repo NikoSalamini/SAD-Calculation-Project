@@ -1,0 +1,66 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.NUMERIC_STD.all;
+
+entity accumulator_tb is
+end accumulator_tb;
+
+architecture beh of accumulator_tb is
+
+	--const def
+	constant clk_period	: time := 100 ns;
+	constant NBit : positive := 16;
+
+	--component dut
+	component accumulator
+		generic (NBit: positive := 16);
+	
+		port(
+			i: in std_logic_vector(NBit-1 downto 0);
+			rst,clk : in std_logic;
+			o: out std_logic_vector(NBit-1 downto 0)
+		);
+	end component;
+
+	--signal of testbench
+	signal i_ext 	: std_logic_vector(NBit-1 downto 0) := b"0000000000000001";
+	signal clk_ext	: std_logic := '0' ;
+	signal rst_ext 	: std_logic := '0' ;
+	signal o_ext	: std_logic_vector(NBit-1 downto 0) ;
+	signal testing	: boolean := true ;
+	
+	--testbench
+	begin
+		clk_ext <= not clk_ext after clk_period/2 when testing else '0';
+		
+		--component instantiation
+		dut: accumulator
+		port map(
+			i => i_ext,
+			clk => clk_ext,
+			rst => rst_ext,
+			o => o_ext
+		);
+		
+		stimulus: process --no sensitivity list
+		--NB: Ho cambiato gli input al clock ma non era necessario farlo in base ad esso, questo clk non è usato per generare input ma per darlo in ingresso al
+		--counter
+		begin
+			wait until rising_edge(clk_ext);
+			rst_ext <= '0';
+			wait until rising_edge(clk_ext);
+			rst_ext <= '0';
+			wait until rising_edge(clk_ext);
+			rst_ext <= '0';
+			i_ext <= b"0000000000000010";
+			wait until rising_edge(clk_ext);
+			rst_ext <= '0';
+			wait until rising_edge(clk_ext);
+			testing <= false; 
+		end process;
+end beh;
+	
+	
+	
+

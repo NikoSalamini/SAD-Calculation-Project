@@ -1,0 +1,54 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
+
+entity accumulator is
+	generic (
+		NBit: positive := 16; 
+		NBit_counter: positive := 8; -- NBit of the counter output
+		counter_threshold: positive := 256 -- threshold to trigger data_valid
+	);
+	
+	port(
+		i: in std_logic_vector(NBit-1 downto 0);
+		rst,clk : in std_logic;
+		en: in std_logic;
+		counter_output: in std_logic_vector(NBit_counter-1 downto 0);
+		o: out std_logic_vector( NBit-1 downto 0 );
+		data_valid: out std_logic
+	);
+end accumulator;
+
+-- Sum the input at each clock if en = '0', data_valid is connected
+architecture beh of accumulator is
+
+signal output_s : std_logic_vector (NBit-1 downto 0);
+signal data_valid_s : std_logic;
+
+begin
+	accumulator_p: process(rst, clk)
+	begin
+	
+		if(rst = '1') then 
+			output_s <= (others => '0');
+			data_valid_s <= '0';
+			
+		elsif(rising_edge(clk) and en='1') then 
+		
+			if(counter_output >= counter_threshold) then -- asynchronous check on counter_output value
+				data_valid_s <= '1';
+				output_s <= output_s;
+			else 
+				output_s <= std_logic_vector(unsigned(output_s) + unsigned(i));
+			end if;
+				
+		elsif(rising_edge(clk) and en='0') then -- keep state
+			data_valid_s <= data_valid_s;
+			output_s <= output_s;
+		end if;
+		
+	end process accumulator_p;
+	o <= output_s;
+	data_valid <= data_valid_s;
+end beh;
