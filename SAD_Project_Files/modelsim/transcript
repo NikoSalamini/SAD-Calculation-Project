@@ -1,0 +1,363 @@
+# Compile of SAD_tb.vhd was successful.
+vsim -gui work.sad_tb
+# vsim -gui work.sad_tb 
+# Start time: 14:49:41 on Jun 16,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+add wave -position insertpoint  \
+sim:/sad_tb/dut/clk \
+sim:/sad_tb/dut/rst \
+sim:/sad_tb/dut/en \
+sim:/sad_tb/dut/PA \
+sim:/sad_tb/dut/PB \
+sim:/sad_tb/dut/sad \
+sim:/sad_tb/dut/data_valid \
+sim:/sad_tb/dut/counter_overflow
+add wave -position insertpoint  \
+sim:/sad_tb/testing
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+add wave -position insertpoint  \
+sim:/sad_tb/dut/counter_output
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+add wave -position insertpoint  \
+sim:/sad_tb/dut/PA_REG/q
+add wave -position insertpoint  \
+sim:/sad_tb/dut/PB_REG/q
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+add wave -position insertpoint  \
+sim:/sad_tb/dut/COUNTER_DEF/output_reg
+add wave -position insertpoint  \
+sim:/sad_tb/dut/COUNTER_DEF/o
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+add wave -position insertpoint  \
+sim:/sad_tb/dut/accumulator_input
+# Break key hit
+# Break in Process ddf_n_proc at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd line 21
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+# Break key hit
+# Break in Process counter_output_reg at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd line 24
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+# Break key hit
+# Break in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_tb.vhd line 69
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd failed with 2 errors.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/modelsim/wave.do
+do C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/modelsim/wave.do
+quit -sim
+vsim -gui work.sad_tb
+# End time: 16:07:18 on Jun 16,2022, Elapsed time: 1:17:37
+# Errors: 0, Warnings: 2
+# vsim -gui work.sad_tb 
+# Start time: 16:07:18 on Jun 16,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+do C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/modelsim/wave.do
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+quit -sim
+# End time: 16:13:29 on Jun 16,2022, Elapsed time: 0:06:11
+# Errors: 0, Warnings: 2
+# Load canceled
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.sad_tb
+# vsim -gui work.sad_tb 
+# Start time: 16:13:53 on Jun 16,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sad_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+do C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/modelsim/wave.do
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
+quit -sim
+# End time: 16:45:40 on Jun 16,2022, Elapsed time: 0:31:47
+# Errors: 0, Warnings: 3
+# Compile of SAD.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# 11 compiles, 0 failed with no errors.

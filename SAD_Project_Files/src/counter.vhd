@@ -8,24 +8,39 @@ entity counter is
 		NBit : positive := 8
 	);
     port (
-		en: in std_logic; -- if set to 1 the counter increases
+		en: in std_logic; 
 		rst,clk : in std_logic;
+		overflow: out std_logic;
 		o: out std_logic_vector( NBit-1 downto 0 )
 	);
-end Counter;
+end counter;
 
--- when en = '1' it counts the clock, otherwise it is freezed
+-- when en = '1' it counts the clock cycles, otherwise the counting is freezed
+-- set overflow to 1 when max_val is reached
 
 architecture beh of counter is
-signal count : std_logic_vector (NBit-1 downto 0);
+signal output_reg : std_logic_vector (NBit-1 downto 0);
+constant max_val  : std_logic_vector (NBit-1 downto 0) := (others => '1');
 begin
-	counter_p: process(clk, rst)
+	counter_output_reg: process(clk, rst)
 	begin
 		if(rst = '1') then 
-			count <= (others => '0');
+			output_reg <= (others => '0');
+			overflow <= '0';
 		elsif((rising_edge(clk)) AND en='1') then 
-			count <= count + 1;
+		
+			if (unsigned(output_reg) = unsigned(max_val)) then
+				output_reg <= (others => '0');
+				overflow <= '1';
+			else
+				output_reg <= output_reg + 1;
+			end if;
+				
+		else
+			output_reg <= output_reg;
 		end if;
-		o <= count;
-	end process counter_p;
+	end process counter_output_reg;
+	
+	-- mapping the output
+	o <= output_reg; -- when output_reg change this thing change.
 end beh;

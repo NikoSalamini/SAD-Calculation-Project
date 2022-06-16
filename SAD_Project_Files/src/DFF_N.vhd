@@ -20,7 +20,7 @@ architecture struct of DFF_N is
    
   ddf_n_proc: process(clk, a_rst_n)
 		begin
-			if(a_rst_n = '0') then
+			if(a_rst_n = '1') then
 				q <= (others => '0');
 			elsif(rising_edge(clk)) then
 				if(en = '1') then
