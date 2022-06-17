@@ -1,354 +1,98 @@
-# Compile of SAD_tb.vhd was successful.
-vsim -gui work.sad_tb
-# vsim -gui work.sad_tb 
-# Start time: 14:49:41 on Jun 16,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-add wave -position insertpoint  \
-sim:/sad_tb/dut/clk \
-sim:/sad_tb/dut/rst \
-sim:/sad_tb/dut/en \
-sim:/sad_tb/dut/PA \
-sim:/sad_tb/dut/PB \
-sim:/sad_tb/dut/sad \
-sim:/sad_tb/dut/data_valid \
-sim:/sad_tb/dut/counter_overflow
-add wave -position insertpoint  \
-sim:/sad_tb/testing
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-add wave -position insertpoint  \
-sim:/sad_tb/dut/counter_output
-# Break key hit
-# Simulation stop requested.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-add wave -position insertpoint  \
-sim:/sad_tb/dut/PA_REG/q
-add wave -position insertpoint  \
-sim:/sad_tb/dut/PB_REG/q
-# Break key hit
-# Simulation stop requested.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-add wave -position insertpoint  \
-sim:/sad_tb/dut/COUNTER_DEF/output_reg
-add wave -position insertpoint  \
-sim:/sad_tb/dut/COUNTER_DEF/o
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-# Break key hit
-# Simulation stop requested.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-add wave -position insertpoint  \
-sim:/sad_tb/dut/accumulator_input
-# Break key hit
-# Break in Process ddf_n_proc at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-# Break key hit
-# Simulation stop requested.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-# Break key hit
-# Break in Process counter_output_reg at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd line 24
-# Break key hit
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-# Break key hit
-# Break in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_tb.vhd line 69
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd failed with 2 errors.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 1 failed with 2 errors.
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-# Break key hit
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-# Break key hit
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Break key hit
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/modelsim/wave.do
-do C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/modelsim/wave.do
-quit -sim
-vsim -gui work.sad_tb
-# End time: 16:07:18 on Jun 16,2022, Elapsed time: 1:17:37
-# Errors: 0, Warnings: 2
-# vsim -gui work.sad_tb 
-# Start time: 16:07:18 on Jun 16,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
-# Loading work.sad_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
-# Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
-do C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/modelsim/wave.do
-run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-quit -sim
-# End time: 16:13:29 on Jun 16,2022, Elapsed time: 0:06:11
-# Errors: 0, Warnings: 2
 # Load canceled
-# Compile of accumulator.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of SAD.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of accumulator_tb.vhd was successful.
-# Compile of SAD_tb.vhd was successful.
-# Compile of counter_tb.vhd was successful.
-# Compile of subtractor_tb.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# 10 compiles, 0 failed with no errors.
-vsim -gui work.sad_tb
-# vsim -gui work.sad_tb 
-# Start time: 16:13:53 on Jun 16,2022
+# Compile of SAD_final_tb.vhd was successful.
+# Load canceled
+# Compile of SAD_final_tb.vhd failed with 1 errors.
+# Compile of SAD_final_tb.vhd failed with 7 errors.
+# Compile of SAD_final_tb.vhd was successful.
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 16:36:50 on Jun 17,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading ieee.numeric_std(body)
-# Loading work.sad_tb(beh)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
 # Loading work.sad(structural)
 # Loading work.counter(beh)
 # Loading work.dff_n(struct)
 # Loading work.subtractor(beh)
 # Loading work.accumulator(beh)
 do C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/modelsim/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/clk'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 3
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/rst'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 4
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/en'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 5
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/PA'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 6
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/PB'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 7
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/sad'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/PA_REG/q'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 9
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/PB_REG/q'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/data_valid'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 11
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/counter_overflow'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/testing'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/counter_output'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 14
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/COUNTER_DEF/output_reg'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/COUNTER_DEF/o'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 16
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/accumulator_input'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 17
+# ** UI-Msg: (vish-4014) No objects found matching '/sad_tb/dut/subtractor_output'.
+# Executing ONERROR command at macro C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\modelsim\wave.do line 18
+add wave -position insertpoint  \
+sim:/sad_final_tb/dut/clk \
+sim:/sad_final_tb/dut/rst \
+sim:/sad_final_tb/dut/en \
+sim:/sad_final_tb/dut/PA \
+sim:/sad_final_tb/dut/PB \
+sim:/sad_final_tb/dut/sad \
+sim:/sad_final_tb/dut/data_valid \
+sim:/sad_final_tb/dut/counter_overflow
 run -all
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
 # ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/dut/SUBTRACTOR_DEF
-quit -sim
-# End time: 16:45:40 on Jun 16,2022, Elapsed time: 0:31:47
-# Errors: 0, Warnings: 3
-# Compile of SAD.vhd was successful.
-# Compile of SAD.vhd was successful.
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 30 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 72
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 72 Process stimulus
+# 
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 30 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 72
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 72 Process stimulus
+# 
 # Compile of accumulator.vhd was successful.
 # Compile of counter.vhd was successful.
 # Compile of DFF_N.vhd was successful.
@@ -360,4 +104,832 @@ quit -sim
 # Compile of subtractor_tb.vhd was successful.
 # Compile of DFF_N_tb.vhd was successful.
 # Compile of SAD_freeze_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Break key hit
+quit -sim
+# End time: 16:40:25 on Jun 17,2022, Elapsed time: 0:03:35
+# Errors: 1, Warnings: 4
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd failed with 1 errors.
+# 12 compiles, 1 failed with 1 error.
+# Compile of SAD_final_tb.vhd was successful.
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 16:42:30 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 30 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 72
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 72 Process stimulus
+# 
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd failed with 9 errors.
+# 12 compiles, 1 failed with 9 errors.
+# Compile of SAD_final_tb.vhd failed with 4 errors.
+# Compile of SAD_final_tb.vhd was successful.
+quit -sim
+# End time: 16:50:46 on Jun 17,2022, Elapsed time: 0:08:16
+# Errors: 1, Warnings: 8
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 16:50:55 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 30 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 76
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 76 Process stimulus
+# 
+# Compile of SAD_final_tb.vhd was successful.
+quit -sim
+# End time: 16:52:02 on Jun 17,2022, Elapsed time: 0:01:07
+# Errors: 1, Warnings: 5
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 16:52:09 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 30 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 76
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 76 Process stimulus
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 76 Process stimulus
+# 
+# Compile of SAD_final_tb.vhd failed with 2 errors.
+# Compile of SAD_final_tb.vhd was successful.
+quit -sim
+# End time: 16:56:22 on Jun 17,2022, Elapsed time: 0:04:13
+# Errors: 1, Warnings: 6
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 16:56:29 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 78
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 78 ForLoop loop
+# 
+# Compile of SAD_final_tb.vhd was successful.
+quit -sim
+# End time: 16:57:13 on Jun 17,2022, Elapsed time: 0:00:44
+# Errors: 1, Warnings: 5
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 16:57:20 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 78
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 78 ForLoop loop
+# 
+# Compile of SAD_final_tb.vhd was successful.
+quit -sim
+vsim -gui work.sad_final_tb
+# End time: 16:58:32 on Jun 17,2022, Elapsed time: 0:01:12
+# Errors: 1, Warnings: 5
+# vsim -gui work.sad_final_tb 
+# Start time: 16:58:33 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 78
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 78 ForLoop loop
+# 
+# Compile of SAD_final_tb.vhd failed with 1 errors.
+# Compile of SAD_final_tb.vhd was successful.
+quit -sim
+# End time: 17:01:30 on Jun 17,2022, Elapsed time: 0:02:57
+# Errors: 1, Warnings: 6
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 17:01:40 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 73
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 73 ForLoop loop
+# 
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Load canceled
+quit -sim
+# End time: 17:06:32 on Jun 17,2022, Elapsed time: 0:04:52
+# Errors: 1, Warnings: 5
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 17:06:41 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 73
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 73 ForLoop loop
+# 
+# Break key hit
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 73
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 73 ForLoop loop
+# 
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 350 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 73
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 73 ForLoop loop
+# 
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 73
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 73 Process stimulus
+# 
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "./test/default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 74
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 74 Process stimulus
+# 
+# Compile of SAD_final_tb.vhd was successful.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 74
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 74 Process stimulus
+# 
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+quit -sim
+# End time: 17:18:50 on Jun 17,2022, Elapsed time: 0:12:09
+# Errors: 1, Warnings: 6
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 17:18:57 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# ** Warning: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb
+add wave -position insertpoint  \
+sim:/sad_final_tb/clk_ext \
+sim:/sad_final_tb/rst_ext \
+sim:/sad_final_tb/en_ext \
+sim:/sad_final_tb/PA_ext \
+sim:/sad_final_tb/PB_ext \
+sim:/sad_final_tb/sad_ext \
+sim:/sad_final_tb/data_valid_ext \
+sim:/sad_final_tb/testing \
+sim:/sad_final_tb/clk_period \
+sim:/sad_final_tb/NBit_input \
+sim:/sad_final_tb/NBit_output
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# ** Fatal: (vsim-7) Failed to open VHDL file "default_list1.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 50 ns  Iteration: 0  Process: /sad_final_tb/stimulus File: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+# Fatal error in Process stimulus at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd line 74
+# 
+# HDL call sequence:
+# Stopped at C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd 74 Process stimulus
+# 
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd failed with 2 errors.
+# 12 compiles, 1 failed with 2 errors.
+# Compile of SAD_final_tb.vhd was successful.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# Compile of SAD_final_tb.vhd was successful.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+quit -sim
+# End time: 17:29:05 on Jun 17,2022, Elapsed time: 0:10:08
+# Errors: 0, Warnings: 2
+vsim -gui work.sad_freeze_tb
+# vsim -gui work.sad_freeze_tb 
+# Start time: 17:29:17 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sad_freeze_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+add wave -position insertpoint  \
+sim:/sad_freeze_tb/dut/counter_threshold \
+sim:/sad_freeze_tb/dut/NBit_input \
+sim:/sad_freeze_tb/dut/NBit_output \
+sim:/sad_freeze_tb/dut/clk \
+sim:/sad_freeze_tb/dut/rst \
+sim:/sad_freeze_tb/dut/en \
+sim:/sad_freeze_tb/dut/PA \
+sim:/sad_freeze_tb/dut/PB \
+sim:/sad_freeze_tb/dut/sad \
+sim:/sad_freeze_tb/dut/data_valid \
+sim:/sad_freeze_tb/dut/counter_overflow \
+sim:/sad_freeze_tb/dut/counter_output \
+sim:/sad_freeze_tb/dut/subtractor_output \
+sim:/sad_freeze_tb/dut/out_PA \
+sim:/sad_freeze_tb/dut/out_PB \
+sim:/sad_freeze_tb/dut/accumulator_input \
+sim:/sad_freeze_tb/dut/NBit_counter \
+sim:/sad_freeze_tb/dut/NBit_subtractor \
+sim:/sad_freeze_tb/dut/NBit_DFF_N \
+sim:/sad_freeze_tb/dut/NBit_accumulator
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_freeze_tb/dut/SUBTRACTOR_DEF
+add wave -position insertpoint  \
+sim:/sad_freeze_tb/sad_ext
+quit -sim
+# End time: 17:30:18 on Jun 17,2022, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 2
+vsim -gui work.sad_final_tb
+# vsim -gui work.sad_final_tb 
+# Start time: 17:30:27 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+# Compile of SAD_final_tb.vhd was successful.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+vsim -gui work.sad_final_tb
+# End time: 17:33:28 on Jun 17,2022, Elapsed time: 0:03:01
+# Errors: 0, Warnings: 1
+# vsim -gui work.sad_final_tb 
+# Start time: 17:33:28 on Jun 17,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sad_final_tb(beh)
+# Loading work.sad(structural)
+# Loading work.counter(beh)
+# Loading work.dff_n(struct)
+# Loading work.subtractor(beh)
+# Loading work.accumulator(beh)
+add wave -position insertpoint  \
+sim:/sad_final_tb/dut/clk \
+sim:/sad_final_tb/dut/rst \
+sim:/sad_final_tb/dut/en \
+sim:/sad_final_tb/dut/PA \
+sim:/sad_final_tb/dut/PB \
+sim:/sad_final_tb/dut/sad \
+sim:/sad_final_tb/dut/data_valid \
+sim:/sad_final_tb/dut/counter_overflow
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+# Compile of SAD_final_tb.vhd was successful.
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sad_final_tb(beh)
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
+add wave -position insertpoint  \
+sim:/sad_final_tb/dut/PA_REG/q
+add wave -position insertpoint  \
+sim:/sad_final_tb/dut/PB_REG/q
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF

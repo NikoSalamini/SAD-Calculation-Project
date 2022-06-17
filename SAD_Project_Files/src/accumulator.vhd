@@ -39,13 +39,8 @@ begin
 			-- check on counter overflow value to prevent the restart of summing when overflow
 			if(counter_ow = '1') then 
 				data_valid_oreg <= '1';
-			else 
-				data_valid_oreg <= data_valid_oreg;
 			end if;
 				
-		else -- keep state
-			data_valid_oreg <= data_valid_oreg;
-			output_oreg <= output_oreg;
 		end if;
 		
 	end process accumulator_p;

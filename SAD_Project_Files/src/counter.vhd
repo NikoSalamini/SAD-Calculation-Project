@@ -36,8 +36,6 @@ begin
 				output_reg <= output_reg + 1;
 			end if;
 				
-		else
-			output_reg <= output_reg;
 		end if;
 	end process counter_output_reg;
 	

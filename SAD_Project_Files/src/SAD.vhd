@@ -84,6 +84,9 @@ constant NBit_subtractor : positive := 8; 	-- Default: The subtractor works on 8
 constant NBit_DFF_N: positive := 8; 		-- Default: Each input is a number between 0 and 255, so it's 8 bits. 
 constant NBit_accumulator: positive := 16; 	-- Default: The accumulator must have 16 bits because the maximum number of the total sum is 255*256.
 
+-- padding used to format the subtractor output to the accumulator input, Default: padding is composed by 8 zeros in the default case
+constant padding : std_logic_vector(NBit_accumulator-NBit_subtractor-1 downto 0) := (others => '0');
+
 -- Signals for interconnections
 signal counter_overflow: std_logic;
 signal counter_output: std_logic_vector (NBit_counter-1 downto 0);
@@ -91,9 +94,6 @@ signal subtractor_output: std_logic_vector (NBit_subtractor-1 downto 0 );
 signal out_PA: std_logic_vector (NBit_DFF_N-1 downto 0);
 signal out_PB: std_logic_vector (NBit_DFF_N-1 downto 0);
 signal accumulator_input: std_logic_vector (NBit_accumulator-1 downto 0);
-
--- padding
-signal padding : std_logic_vector(NBit_accumulator-NBit_subtractor-1 downto 0);
 
 begin
 
@@ -104,10 +104,6 @@ begin
 	PB_REG: DFF_N generic map (NBit => NBit_DFF_N) port map (clk => clk, a_rst_n => rst, en => en, d => PB, q => out_PB); -- PB
 	
 	SUBTRACTOR_DEF: subtractor generic map(NBit => NBit_subtractor) port map (input1 => out_PA, input2 => out_PB, abs_diff => subtractor_output); -- |PA - PB|
-	
-	padding_generator : for i in 0 to NBit_accumulator-NBit_subtractor-1 generate
-		padding(i) <= '0';
-	end generate;
 	
 	ACCUMULATOR_DEF: accumulator 
 	generic map(NBit => NBit_accumulator) 

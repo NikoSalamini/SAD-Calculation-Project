@@ -15,8 +15,9 @@ add wave -noupdate /sad_tb/dut/counter_output
 add wave -noupdate /sad_tb/dut/COUNTER_DEF/output_reg
 add wave -noupdate /sad_tb/dut/COUNTER_DEF/o
 add wave -noupdate /sad_tb/dut/accumulator_input
+add wave -noupdate /sad_tb/dut/subtractor_output
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {26371845 ps} 0}
+WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -32,4 +33,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {25375337 ps} {26453930 ps}
+WaveRestoreZoom {0 ps} {1002346 ps}
