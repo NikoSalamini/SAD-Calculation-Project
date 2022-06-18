@@ -18,7 +18,7 @@ def random_pixel_values(id, amount, max_pixel_value):
         randomlist += str(n) +"\n"
         randomlist_integer.append(n)
 
-    with open("default_list"+str(id)+".txt", 'w') as f:
+    with open("./../../SAD_Project_Files/tb/test/default_list"+str(id)+".txt", 'w') as f:
         f.write(randomlist)
 
     return randomlist_integer
@@ -32,11 +32,11 @@ def SAD(PAs, PBs):
     sad = 0
     for i in range (0, len(PAs)):
         diff = abs(PAs[i] - PBs[i])
-        SAD_str += str(diff) +"\n"
         sad += diff
+        SAD_str += str(sad) + "\n"
 
     # write the resulting vector sad on file
-    with open("default_list_sad.txt", 'w') as f:
+    with open("./../../SAD_Project_Files/tb/test/default_list_sad.txt", 'w') as f:
         f.write(SAD_str)
     return sad
 
