@@ -1,26 +1,41 @@
-vsim -gui work.sad_final_tb
-# vsim -gui work.sad_final_tb 
-# Start time: 11:35:53 on Jun 18,2022
+# Compile of accumulator.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of SAD.vhd was successful.
+# Compile of subtractor.vhd was successful.
+# Compile of accumulator_tb.vhd was successful.
+# Compile of SAD_tb.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of subtractor_tb.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of SAD_freeze_tb.vhd was successful.
+# Compile of SAD_final_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.dff_n_tb
+# vsim -gui work.dff_n_tb 
+# Start time: 12:49:26 on Jun 20,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.sad_final_tb(beh)
-# Loading work.sad(structural)
-# Loading work.counter(beh)
+# Loading work.dff_n_tb(beh)
 # Loading work.dff_n(struct)
-# Loading work.subtractor(beh)
-# Loading work.accumulator(beh)
 add wave -position insertpoint  \
-sim:/sad_final_tb/dut/sad
+sim:/dff_n_tb/dut/clk \
+sim:/dff_n_tb/dut/a_rst_n \
+sim:/dff_n_tb/dut/en \
+sim:/dff_n_tb/dut/d \
+sim:/dff_n_tb/dut/q
 run -all
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_final_tb/dut/SUBTRACTOR_DEF
-add list \
-sim:/sad_final_tb/dut/sad 
-write list -window .main_pane.list.interior.cs.body -events C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/test/list.txt
-# End time: 12:37:32 on Jun 18,2022, Elapsed time: 1:01:39
+# image file format "bmp" is unknown
+# image file format "bmp" is unknown
+add wave -position insertpoint  \
+sim:/dff_n_tb/dut/clk \
+sim:/dff_n_tb/dut/a_rst_n \
+sim:/dff_n_tb/dut/en \
+sim:/dff_n_tb/dut/d \
+sim:/dff_n_tb/dut/q
+# End time: 15:30:23 on Jun 20,2022, Elapsed time: 2:40:57
 # Errors: 0, Warnings: 2

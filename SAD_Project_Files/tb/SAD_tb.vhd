@@ -16,7 +16,8 @@ architecture beh of SAD_tb is
 	--component dut
 	component SAD
 		generic (
-			counter_threshold: positive := 256; -- when counter reaches this value data_valid is set to 1.
+			-- when counter reaches this value data_valid is set to 1.
+			counter_threshold: positive := 256; 
 			NBit_input: positive := 8;
 			NBit_output: positive := 16
 		);
@@ -76,7 +77,3 @@ architecture beh of SAD_tb is
 			testing <= false; 
 		end process;
 end beh;
-	
-	
-	
-

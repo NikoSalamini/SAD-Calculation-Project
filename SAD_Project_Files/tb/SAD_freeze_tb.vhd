@@ -17,7 +17,8 @@ architecture beh of SAD_freeze_tb is
 	--component dut
 	component SAD
 		generic (
-			counter_threshold: positive := 256; -- when counter reaches this value data_valid is set to 1.
+			-- when counter reaches this value data_valid is set to 1.
+			counter_threshold: positive := 256; 
 			NBit_input: positive := 8;
 			NBit_output: positive := 16
 		);
@@ -66,7 +67,8 @@ architecture beh of SAD_freeze_tb is
 			rst_ext <= '0';
 			
 			-- freeze experiment, the sum is freezed for 2 clocks and then resumed
-			-- In the default case the result is 257 because we have introduce a couple with a difference of 2 in the pixel value
+			-- In the default case the result is 257 because we have introduce a 
+			-- couple with a difference of 2 in the pixel value
 			wait until rising_edge(clk_ext);
 			PA_ext <= b"00000100";
 			PB_ext <= b"00000110";
@@ -82,6 +84,3 @@ architecture beh of SAD_freeze_tb is
 			testing <= false; 
 		end process;
 end beh;
-	
-	
-	
