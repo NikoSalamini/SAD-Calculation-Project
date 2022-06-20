@@ -22,3 +22,5 @@ run -all
 add list \
 sim:/sad_final_tb/dut/sad 
 write list -window .main_pane.list.interior.cs.body -events C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/test/list.txt
+# End time: 12:37:32 on Jun 18,2022, Elapsed time: 1:01:39
+# Errors: 0, Warnings: 2

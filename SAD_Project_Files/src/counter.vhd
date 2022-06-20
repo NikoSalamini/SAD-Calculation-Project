@@ -28,8 +28,9 @@ begin
 			output_reg <= (others => '0');
 			overflow <= '0';
 		elsif((rising_edge(clk)) AND en='1') then 
-		
-			if (unsigned(output_reg) = unsigned(max_val)) then
+			
+			-- when max_val is reached the counter overflows and overflow is set to '1'
+			if (unsigned(output_reg) = unsigned(max_val)) then 
 				output_reg <= (others => '0');
 				overflow <= '1';
 			else
@@ -40,5 +41,5 @@ begin
 	end process counter_output_reg;
 	
 	-- mapping the output
-	o <= output_reg; -- when output_reg change this thing change.
+	o <= output_reg; 
 end beh;

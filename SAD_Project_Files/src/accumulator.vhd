@@ -36,7 +36,8 @@ begin
 		
 			output_oreg <= std_logic_vector(unsigned(output_oreg) + unsigned(i));
 			
-			-- check on counter overflow value to prevent the restart of summing when overflow
+			-- check on counter overflow value to prevent the restart of summing 
+			-- when overflow
 			if(counter_ow = '1') then 
 				data_valid_oreg <= '1';
 			end if;
