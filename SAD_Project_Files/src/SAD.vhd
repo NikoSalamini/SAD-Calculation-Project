@@ -3,11 +3,30 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.all;
 use IEEE.STD_LOGIC_UNSIGNED.all;
 
+-- 64x64 template
+-- NBit_input: positive := 8;		 -- 0,255
+-- NBit_output: positive := 20;	   	 -- 255*64*64=2^8*2^12=1044480, needs 20 bits	
+-- NBit_counter: positive := 12; 	 -- 64*64=2^12, 12 bits
+-- NBit_subtractor : positive := 8;  -- 0, 255
+-- NBit_DFF_N: positive := 8;		 -- 0, 255
+-- NBit_accumulator: positive := 20  -- 255*64*64=2^8*2^12=1044480, needs 20 bits
+
+-- 16x16 template
+-- NBit_input: positive := 8;
+-- NBit_output: positive := 16;
+-- NBit_counter: positive := 8; 	 -- Default: The counter must have 8 bits to count the sum of the differences of 16x16 = 256 pixel couples.
+-- NBit_subtractor : positive := 8; -- Default: The subtractor works on 8 bits because the case is the subtraction of 2 unsigned integers on 8 bits.
+-- NBit_DFF_N: positive := 8;		 -- Default: Each input is a number between 0 and 255, so it's 8 bits. 
+-- NBit_accumulator: positive := 16 -- Default: The accumulator must have 16 bits because the maximum number of the total sum is 255*256.
+
 entity SAD is
 	generic (
-		counter_threshold: positive := 256; -- when counter reaches this value data_valid is set to 1.
 		NBit_input: positive := 8;
-		NBit_output: positive := 16
+		NBit_output: positive := 16;
+		NBit_counter: positive := 8; 	 -- Default: The counter must have 8 bits to count the sum of the differences of 16x16 = 256 pixel couples.
+		NBit_subtractor : positive := 8; -- Default: The subtractor works on 8 bits because the case is the subtraction of 2 unsigned integers on 8 bits.
+		NBit_DFF_N: positive := 8;		 -- Default: Each input is a number between 0 and 255, so it's 8 bits. 
+		NBit_accumulator: positive := 16 -- Default: The accumulator must have 16 bits because the maximum number of the total sum is 255*256.
 	);
     port (
 		clk			: in std_logic;
@@ -77,12 +96,6 @@ component accumulator is
 		data_valid: out std_logic
 	);
 end component;
-
--- Constants
-constant NBit_counter : positive := 8; 		-- Default: The counter must have 8 bits to count the sum of the differences of 16x16 = 256 pixel couples.
-constant NBit_subtractor : positive := 8; 	-- Default: The subtractor works on 8 bits because the case is the subtraction of 2 unsigned integers on 8 bits.
-constant NBit_DFF_N: positive := 8; 		-- Default: Each input is a number between 0 and 255, so it's 8 bits. 
-constant NBit_accumulator: positive := 16; 	-- Default: The accumulator must have 16 bits because the maximum number of the total sum is 255*256.
 
 -- padding used to format the subtractor output to the accumulator input, Default: padding is composed by 8 zeros in the default case
 constant padding : std_logic_vector(NBit_accumulator-NBit_subtractor-1 downto 0) := (others => '0');

@@ -17,53 +17,53 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4728
+INFO: [Synth 8-7075] Helper process launched with PID 19772
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'SAD' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:23]
-	Parameter counter_threshold bound to: 256 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SAD' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:42]
 	Parameter NBit_input bound to: 8 - type: integer 
 	Parameter NBit_output bound to: 16 - type: integer 
+	Parameter NBit_counter bound to: 8 - type: integer 
+	Parameter NBit_subtractor bound to: 8 - type: integer 
+	Parameter NBit_DFF_N bound to: 8 - type: integer 
+	Parameter NBit_accumulator bound to: 16 - type: integer 
 	Parameter NBit bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:6' bound to instance 'COUNTER_DEF' of component 'counter' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:100]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:6' bound to instance 'COUNTER_DEF' of component 'counter' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:113]
 INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:21]
 	Parameter NBit bound to: 8 - type: integer 
-WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:25]
 INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:21]
 	Parameter NBit bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:5' bound to instance 'PA_REG' of component 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:103]
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:5' bound to instance 'PA_REG' of component 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:116]
 INFO: [Synth 8-638] synthesizing module 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:18]
 	Parameter NBit bound to: 8 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'DFF_N' (2#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:18]
 	Parameter NBit bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:5' bound to instance 'PB_REG' of component 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:104]
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:5' bound to instance 'PB_REG' of component 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:117]
 	Parameter NBit bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'subtractor' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:5' bound to instance 'SUBTRACTOR_DEF' of component 'subtractor' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:106]
+INFO: [Synth 8-3491] module 'subtractor' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:5' bound to instance 'SUBTRACTOR_DEF' of component 'subtractor' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:119]
 INFO: [Synth 8-638] synthesizing module 'subtractor' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:19]
 	Parameter NBit bound to: 8 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'subtractor' (3#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:19]
 	Parameter NBit bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'accumulator' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:6' bound to instance 'ACCUMULATOR_DEF' of component 'accumulator' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:108]
+INFO: [Synth 8-3491] module 'accumulator' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:6' bound to instance 'ACCUMULATOR_DEF' of component 'accumulator' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:121]
 INFO: [Synth 8-638] synthesizing module 'accumulator' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:22]
 	Parameter NBit bound to: 16 - type: integer 
-WARNING: [Synth 8-614] signal 'data_valid_oreg' is read in the process but is not in the sensitivity list [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:28]
-WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'accumulator' (4#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'SAD' (5#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'SAD' (5#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:42]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1001.883 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -72,29 +72,29 @@ Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Pr
 Finished Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1001.883 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -124,25 +124,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -160,37 +160,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -219,25 +219,25 @@ Report Cell Usage:
 |11    |OBUF   |    17|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1001.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:54 . Memory (MB): peak = 1005.270 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1005.270 ; gain = 0.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:03 . Memory (MB): peak = 1001.883 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1001.883 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1014.668 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1013.277 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1014.316 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1017.902 ; gain = 12.633
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 1014.316 ; gain = 12.434
 INFO: [Common 17-1381] The checkpoint 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.runs/synth_1/SAD.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SAD_utilization_synth.rpt -pb SAD_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 17 12:14:43 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 24 17:00:16 2022...

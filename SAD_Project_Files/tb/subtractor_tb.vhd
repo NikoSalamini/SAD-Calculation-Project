@@ -51,6 +51,3 @@ architecture beh of subtractor_tb is
 			testing <= false; 
 		end process;
 end beh;
-	
-	
-	

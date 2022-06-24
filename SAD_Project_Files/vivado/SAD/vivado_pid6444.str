@@ -1,0 +1,251 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 6444
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jun 24 17:02:01 CEST 2022
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	nikos
+User home directory: C:/Users/nikos
+User working directory: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD
+User country: 	IT
+User language: 	it
+User locale: 	it_IT
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/nikos/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/nikos/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/nikos/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/vivado.log
+Vivado journal file location: 	C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/vivado.jou
+Engine tmp dir: 	C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/.Xil/Vivado-6444-DESKTOP-PULOB4B
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	130 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,016 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\vivado\SAD\SAD.xpr. Version: Vivado v2020.2 
+// bz (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,016 MB. GUI used memory: 53 MB. Current time: 6/24/22, 5:02:03 PM CEST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 66 MB (+66682kb) [00:00:26]
+// [Engine Memory]: 1,016 MB (+913676kb) [00:00:26]
+// [GUI Memory]: 89 MB (+20426kb) [00:00:27]
+// [GUI Memory]: 109 MB (+17025kb) [00:00:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  8624 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:13 . Memory (MB): peak = 1002.180 ; gain = 0.000 
+// Project name: SAD; location: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD; part: xc7z010clg400-1
+// [GUI Memory]: 118 MB (+3121kb) [00:00:33]
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7z010clg400-1 Top: SAD 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,109 MB. GUI used memory: 74 MB. Current time: 6/24/22, 5:02:54 PM CEST
+// TclEventType: ELABORATE_START
+// [Engine Memory]: 1,113 MB (+48149kb) [00:01:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,277 MB. GUI used memory: 74 MB. Current time: 6/24/22, 5:03:08 PM CEST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,291 MB. GUI used memory: 74 MB. Current time: 6/24/22, 5:03:13 PM CEST
+// [Engine Memory]: 1,334 MB (+173646kb) [00:01:32]
+// Xgd.load filename: C:/Xilinx/Vivado/2020.2/data/parts/xilinx/zynq/devint/zynq/xc7z010/xc7z010.xgd; ZipEntry: xc7z010_detail.xgd elapsed time: 1.1s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.3s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.2s
+// [Engine Memory]: 1,408 MB (+7585kb) [00:01:36]
+// [GUI Memory]: 141 MB (+18156kb) [00:01:37]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4322 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z010clg400-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.641 ; gain = 236.461 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'SAD' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:42] 
+// Tcl Message: 	Parameter NBit_input bound to: 8 - type: integer  	Parameter NBit_output bound to: 16 - type: integer  	Parameter NBit_counter bound to: 8 - type: integer  	Parameter NBit_subtractor bound to: 8 - type: integer  	Parameter NBit_DFF_N bound to: 8 - type: integer  	Parameter NBit_accumulator bound to: 16 - type: integer  	Parameter NBit bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:6' bound to instance 'COUNTER_DEF' of component 'counter' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:113] INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:21] 
+// Tcl Message: 	Parameter NBit bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:21] 
+// Tcl Message: 	Parameter NBit bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:5' bound to instance 'PA_REG' of component 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:116] INFO: [Synth 8-638] synthesizing module 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:18] 
+// Tcl Message: 	Parameter NBit bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'DFF_N' (2#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:18] 
+// Tcl Message: 	Parameter NBit bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:5' bound to instance 'PB_REG' of component 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:117] 
+// Tcl Message: 	Parameter NBit bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'subtractor' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:5' bound to instance 'SUBTRACTOR_DEF' of component 'subtractor' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:119] INFO: [Synth 8-638] synthesizing module 'subtractor' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:19] 
+// Tcl Message: 	Parameter NBit bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'subtractor' (3#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:19] 
+// Tcl Message: 	Parameter NBit bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'accumulator' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:6' bound to instance 'ACCUMULATOR_DEF' of component 'accumulator' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:121] INFO: [Synth 8-638] synthesizing module 'accumulator' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:22] 
+// Tcl Message: 	Parameter NBit bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'accumulator' (4#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:22] INFO: [Synth 8-256] done synthesizing module 'SAD' (5#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:42] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.980 ; gain = 284.801 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1286.980 ; gain = 284.801 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1286.980 ; gain = 284.801 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1286.980 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc] Finished Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc] Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1388.305 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 1501.422 ; gain = 499.242 
+// Tcl Message: 18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:39 . Memory (MB): peak = 1501.422 ; gain = 499.242 
+// 'dV' command handler elapsed time: 42 seconds
+// [GUI Memory]: 152 MB (+4087kb) [00:01:41]
+// WARNING: HEventQueue.dispatchEvent() is taking  2058 ms.
+// Elapsed time: 41 seconds
+dismissDialog("Open Elaborated Design"); // bz
+// [Engine Memory]: 1,482 MB (+3794kb) [00:03:58]
+// Elapsed time: 137 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// g (cr): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a
+// bz (cr):  Close : addNotify
+dismissDialog("Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,490 MB. GUI used memory: 94 MB. Current time: 6/24/22, 5:05:43 PM CEST
+// Engine heap size: 1,490 MB. GUI used memory: 95 MB. Current time: 6/24/22, 5:05:43 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1408 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// bz (cr):  Open Synthesized Design : addNotify
+dismissDialog("Close"); // bz
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z010clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,490 MB. GUI used memory: 77 MB. Current time: 6/24/22, 5:05:47 PM CEST
+// Xgd.load filename: C:/Xilinx/Vivado/2020.2/data/parts/xilinx/zynq/devint/zynq/xc7z010/xc7z010.xgd; ZipEntry: xc7z010_detail.xgd elapsed time: 0.7s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.7s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.1s
+// Package: addNotify
+// Device: addNotify
+// [GUI Memory]: 160 MB (+157kb) [00:04:12]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  5354 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1606.281 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc] Finished Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1606.281 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 1606.281 ; gain = 0.000 
+// 'dV' command handler elapsed time: 18 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2465 ms.
+dismissDialog("Open Synthesized Design"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,541 MB. GUI used memory: 107 MB. Current time: 6/24/22, 5:06:08 PM CEST
+// RouteApi::initDelayMediator elapsed time: 22.4s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 1,918 MB (+380136kb) [00:05:24]

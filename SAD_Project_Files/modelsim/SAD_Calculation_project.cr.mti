@@ -1,4 +1,15 @@
-C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd
+C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/DFF_N_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/DFF_N_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity DFF_N_tb
+-- Compiling architecture beh of DFF_N_tb
+
+} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -9,7 +20,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity accumulator
 -- Compiling architecture beh of accumulator
 
-} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/DFF_N_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/DFF_N_tb.vhd
+} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -17,8 +28,8 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading package NUMERIC_STD
--- Compiling entity DFF_N_tb
--- Compiling architecture beh of DFF_N_tb
+-- Compiling entity SAD_tb
+-- Compiling architecture beh of SAD_tb
 
 } {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/counter_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/counter_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -31,15 +42,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity counter_tb
 -- Compiling architecture beh of counter_tb
 
-} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd
+} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_NXN_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_NXN_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity counter
--- Compiling architecture beh of counter
+-- Loading package NUMERIC_STD
+-- Compiling entity SAD_NXN_tb
+-- Compiling architecture beh of SAD_NXN_tb
 
 } {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -50,6 +62,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity SAD
 -- Compiling architecture Structural of SAD
+
+} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity counter
+-- Compiling architecture beh of counter
 
 } {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -71,7 +93,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity accumulator_tb
 -- Compiling architecture beh of accumulator_tb
 
-} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_freeze_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_freeze_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -79,9 +101,8 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading package NUMERIC_STD
--- Loading package std_logic_textio
--- Compiling entity SAD_final_tb
--- Compiling architecture beh of SAD_final_tb
+-- Compiling entity SAD_freeze_tb
+-- Compiling architecture beh of SAD_freeze_tb
 
 } {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/subtractor_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/subtractor_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -93,6 +114,18 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity subtractor_tb
 -- Compiling architecture beh of subtractor_tb
+
+} {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/tb/SAD_final_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity SAD_final_tb
+-- Compiling architecture beh of SAD_final_tb
 
 } {} {}} C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

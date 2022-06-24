@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 24 17:01:32 2022
+# Process ID: 6444
+# Current directory: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6536 C:\Users\nikos\Documents\GitHub\SAD-Calculation-Project\SAD_Project_Files\vivado\SAD\SAD.xpr
+# Log file: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/vivado.log
+# Journal file: C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:13 . Memory (MB): peak = 1002.180 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: SAD
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.641 ; gain = 236.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SAD' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:42]
+	Parameter NBit_input bound to: 8 - type: integer 
+	Parameter NBit_output bound to: 16 - type: integer 
+	Parameter NBit_counter bound to: 8 - type: integer 
+	Parameter NBit_subtractor bound to: 8 - type: integer 
+	Parameter NBit_DFF_N bound to: 8 - type: integer 
+	Parameter NBit_accumulator bound to: 16 - type: integer 
+	Parameter NBit bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:6' bound to instance 'COUNTER_DEF' of component 'counter' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:21]
+	Parameter NBit bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/counter.vhd:21]
+	Parameter NBit bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:5' bound to instance 'PA_REG' of component 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:18]
+	Parameter NBit bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N' (2#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:18]
+	Parameter NBit bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/DFF_N.vhd:5' bound to instance 'PB_REG' of component 'DFF_N' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:117]
+	Parameter NBit bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'subtractor' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:5' bound to instance 'SUBTRACTOR_DEF' of component 'subtractor' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'subtractor' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:19]
+	Parameter NBit bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'subtractor' (3#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/subtractor.vhd:19]
+	Parameter NBit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'accumulator' declared at 'C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:6' bound to instance 'ACCUMULATOR_DEF' of component 'accumulator' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'accumulator' [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:22]
+	Parameter NBit bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'accumulator' (4#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/accumulator.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'SAD' (5#1) [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/src/SAD.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.980 ; gain = 284.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1286.980 ; gain = 284.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1286.980 ; gain = 284.801
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1286.980 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc]
+Finished Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1388.305 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 1501.422 ; gain = 499.242
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:39 . Memory (MB): peak = 1501.422 ; gain = 499.242
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1606.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc]
+Finished Parsing XDC File [C:/Users/nikos/Documents/GitHub/SAD-Calculation-Project/SAD_Project_Files/vivado/SAD/SAD.srcs/constrs_1/new/SAD_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1606.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 1606.281 ; gain = 0.000

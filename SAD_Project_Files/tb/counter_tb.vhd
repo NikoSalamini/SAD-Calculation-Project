@@ -55,9 +55,7 @@ architecture beh of counter_tb is
 			rst_ext <= '1';
 			wait for 30 ns;
 			rst_ext <= '0';
-			wait until rising_edge(clk_ext);
-			rst_ext <= '0';
-			wait for 100000 ns;
+			wait for 25600 ns;
 			testing <= false; 
 		end process;
 end beh;

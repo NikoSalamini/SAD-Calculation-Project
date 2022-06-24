@@ -27,16 +27,19 @@ begin
 		if(rst = '1') then 
 			output_reg <= (others => '0');
 			overflow <= '0';
-		elsif((rising_edge(clk)) AND en='1') then 
+		elsif((rising_edge(clk))) then 
+		
+			if (en='1') then
 			
-			-- when max_val is reached the counter overflows and overflow is set to '1'
-			if (unsigned(output_reg) = unsigned(max_val)) then 
-				output_reg <= (others => '0');
-				overflow <= '1';
-			else
-				output_reg <= output_reg + 1;
-			end if;
+				-- when max_val is reached the counter overflows and overflow is set to '1'
+				if (unsigned(output_reg) = unsigned(max_val)) then 
+					output_reg <= (others => '0');
+					overflow <= '1';
+				else
+					output_reg <= output_reg + 1;
+				end if;
 				
+			end if;
 		end if;
 	end process counter_output_reg;
 	

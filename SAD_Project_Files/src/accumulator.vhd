@@ -32,14 +32,16 @@ begin
 			output_oreg <= (others => '0');
 			data_valid_oreg <= '0';
 			
-		elsif(rising_edge(clk) and en='1' and data_valid_oreg='0') then 
+		elsif(rising_edge(clk)) then 
 		
-			output_oreg <= std_logic_vector(unsigned(output_oreg) + unsigned(i));
-			
-			-- check on counter overflow value to prevent the restart of summing 
-			-- when overflow
-			if(counter_ow = '1') then 
-				data_valid_oreg <= '1';
+			if(en='1' and data_valid_oreg='0') then
+				output_oreg <= std_logic_vector(unsigned(output_oreg) + unsigned(i));
+				
+				-- check on counter overflow value to prevent the restart of summing 
+				-- when overflow
+				if(counter_ow = '1') then 
+					data_valid_oreg <= '1';
+				end if;
 			end if;
 				
 		end if;

@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param synth.incrementalSynthesisCache C:/Users/nikos/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13648-DESKTOP-PULOB4B/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }

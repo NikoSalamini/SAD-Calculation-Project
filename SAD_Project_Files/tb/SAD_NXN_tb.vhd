@@ -3,15 +3,13 @@ use IEEE.STD_LOGIC_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.NUMERIC_STD.all;
 
-entity SAD_tb is
-end SAD_tb;
+entity SAD_NXN_tb is
+end SAD_NXN_tb;
 
-architecture beh of SAD_tb is
+architecture beh of SAD_NXN_tb is
 
 	--const def
 	constant clk_period	: time := 100 ns;
-	constant NBit_input : positive := 8;
-	constant NBit_output: positive := 16;
 
 	--component dut
 	component SAD
@@ -33,14 +31,23 @@ architecture beh of SAD_tb is
 			data_valid	: out std_logic -- set to 1 when SAD calculation is over
 		);
 	end component;
+	
+	-- 64x64 template
+	constant NBit_input_c: positive := 8;		 -- 0,255
+	constant NBit_output_c: positive := 20;	     -- 255*64*64=2^8*2^12=1044480, needs 20 bits	
+	constant NBit_counter_c: positive := 12; 	 -- 64*64=2^12, 12 bits
+	constant NBit_subtractor_c: positive := 8;   -- 0, 255
+	constant NBit_DFF_N_c: positive := 8;		 -- 0, 255
+	constant NBit_accumulator_c: positive := 20; -- 255*64*64=2^8*2^12=1044480, needs 20 bits
+	
 
 	--signal of testbench
 	signal clk_ext	: std_logic := '0' ;
 	signal rst_ext 	: std_logic := '0' ;
 	signal en_ext 	: std_logic := '1';
-	signal PA_ext	: std_logic_vector(NBit_input-1 downto 0) := b"00000001";
-	signal PB_ext	: std_logic_vector(NBit_input-1 downto 0) := b"00000010";	
-	signal sad_ext	: std_logic_vector(NBit_output-1 downto 0) ;
+	signal PA_ext	: std_logic_vector(NBit_input_c-1 downto 0) := b"00000001";
+	signal PB_ext	: std_logic_vector(NBit_input_c-1 downto 0) := b"00000010";	
+	signal sad_ext	: std_logic_vector(NBit_output_c-1 downto 0) ;
 	signal data_valid_ext : std_logic;
 	signal testing	: boolean := true ;
 	
@@ -50,6 +57,14 @@ architecture beh of SAD_tb is
 		
 		--component instantiation
 		dut: SAD
+		generic map(
+			NBit_input => NBit_input_c,
+			NBit_output => NBit_output_c,
+			NBit_counter => NBit_counter_c,
+			NBit_subtractor => NBit_subtractor_c,
+			NBit_DFF_N => NBit_DFF_N_c,
+			NBit_accumulator => NBit_accumulator_c
+		)
 		port map(
 			clk => clk_ext,
 			rst => rst_ext,
@@ -75,7 +90,20 @@ architecture beh of SAD_tb is
 			PA_ext <= b"00000101";
 			PB_ext <= b"00000110";
 			
-			wait for 26000 ns;
+			wait for 409700 ns;
+			
+			rst_ext <= '1';
+			wait for 30 ns;
+			rst_ext <= '0';
+			wait until rising_edge(clk_ext);
+			PA_ext <= b"00000011";
+			PB_ext <= b"00000100";
+			wait until rising_edge(clk_ext);
+			PA_ext <= b"00000101";
+			PB_ext <= b"00000110";
+			
+			wait for 409700 ns;
+			
 			testing <= false; 
 		end process;
 end beh;

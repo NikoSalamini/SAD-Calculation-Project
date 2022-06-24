@@ -1,14 +1,5 @@
 import random
 
-#
-def extend_representation(rep, n_bits):
-    if len(rep) > n_bits:
-        print("error in representation")
-        return
-    while len(rep) != n_bits:
-        rep = "0"+rep
-    print(rep)
-
 # generating "amount" random pixel values
 def random_pixel_values(id, amount, max_pixel_value):
     randomlist = ""
@@ -23,6 +14,7 @@ def random_pixel_values(id, amount, max_pixel_value):
 
     return randomlist_integer
 
+# calculate the sum of absolute differences between the 2 vectors
 def SAD(PAs, PBs):
 
     if len(PAs) != len(PBs):
@@ -57,15 +49,6 @@ def main():
         print("sad not generated correctly")
     else:
         print("sad generated correctly: "+str(sad))
-
-    prova = bin(256).split('b')[1]
-    print(prova)
-    extend_representation(prova, 9)
-
-
-
-
-
 
 if __name__ == "__main__":
     main()

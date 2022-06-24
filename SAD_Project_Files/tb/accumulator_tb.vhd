@@ -61,9 +61,8 @@ architecture beh of accumulator_tb is
 			rst_ext <= '1';
 			wait for 30 ns;
 			rst_ext <= '0';
-			wait for 25600 ns;
+			wait for 25500 ns;
 			counter_ow_ext <= '1';
-			wait until rising_edge(clk_ext);
 			wait until rising_edge(clk_ext);
 			wait until rising_edge(clk_ext);
 			wait until rising_edge(clk_ext);
@@ -71,7 +70,3 @@ architecture beh of accumulator_tb is
 			wait until rising_edge(clk_ext);
 		end process;
 end beh;
-	
-	
-	
-
